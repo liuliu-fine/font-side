@@ -230,7 +230,7 @@
 				}
 
 				//  And add it to our navigation item
-				$nav.children('ol').append('<li data-slide="' + key + '">' + label + '</li>');
+				$nav.children('ol').append('<li data-slide="' + key + '">' +'' + '</li>');
 			});
 			
 			//  Keep a copy of the nav everywhere so we can use it
@@ -354,7 +354,7 @@
 		//  Loop our array of arrows and use jQuery to remove
 		//  It'll unbind any event handlers for us
 		self.destroyArrows = function() {
-			$.each(self.$arrows, function($arrow) {
+			$.each(self.$arrows, function(i, $arrow) {
 				$arrow.remove();
 			});
 		};
